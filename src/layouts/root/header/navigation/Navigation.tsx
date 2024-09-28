@@ -15,37 +15,41 @@ import { Container } from '@/ui/container/Container'
 
 interface INavigationProps extends ComponentPropsWithRef<'nav'> {
 	isMenuOpened: boolean
+	menuToggle: () => void
 }
 
-export const Navigation = forwardRef<HTMLElement, INavigationProps>(({ isMenuOpened, className, ...props }, ref) => {
-	const pathname = usePathname()
-	const isActiveLink = (url: string) => pathname === url
+export const Navigation = forwardRef<HTMLElement, INavigationProps>(
+	({ isMenuOpened, menuToggle, className, ...props }, ref) => {
+		const pathname = usePathname()
+		const isActiveLink = (url: string) => pathname === url
 
-	return (
-		<nav
-			ref={ref}
-			className={cn(styles.navigation, isMenuOpened && styles.opened, className)}
-			{...props}
-		>
-			<Container className={styles.container}>
-				<ul className={styles.list}>
-					{routes.map((route, index) => (
-						<li
-							key={index}
-							className={styles.item}
-						>
-							<NextLink
-								className={cn(styles.link, isActiveLink(route.url) && styles.active)}
-								href={route.url}
+		return (
+			<nav
+				ref={ref}
+				className={cn(styles.navigation, isMenuOpened && styles.opened, className)}
+				{...props}
+			>
+				<Container className={styles.container}>
+					<ul className={styles.list}>
+						{routes.map((route, index) => (
+							<li
+								key={index}
+								className={styles.item}
+								onClick={menuToggle}
 							>
-								{route.label}
-							</NextLink>
-						</li>
-					))}
-				</ul>
-			</Container>
-		</nav>
-	)
-})
+								<NextLink
+									className={cn(styles.link, isActiveLink(route.url) && styles.active)}
+									href={route.url}
+								>
+									{route.label}
+								</NextLink>
+							</li>
+						))}
+					</ul>
+				</Container>
+			</nav>
+		)
+	}
+)
 
 Navigation.displayName = 'Navigation'

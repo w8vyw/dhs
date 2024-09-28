@@ -1,0 +1,32 @@
+@import '@/styles/variables';
+
+.partners {
+	padding: var(--sp-xl);
+
+	background: var(--pink-200);
+
+	.container {
+		max-width: 1500px;
+	}
+
+	.heading {
+		margin-bottom: var(--sp-lg);
+
+		text-align: center;
+	}
+
+	.content {
+		.list {
+			display: grid;
+			grid-template-columns: repeat(3, 300px);
+			justify-content: center;
+			align-items: center;
+			gap: 100px;
+
+			.item {
+				.image {
+				}
+			}
+		}
+	}
+}

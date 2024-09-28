@@ -71,6 +71,7 @@ export function Header() {
 			<Navigation
 				ref={menuRef}
 				isMenuOpened={isMenuOpened}
+				menuToggle={menuToggle}
 			/>
 		</header>
 	)
