@@ -1,0 +1,42 @@
+{
+	"root": true,
+	"env": {
+		"browser": true,
+		"es2021": true
+	},
+	"extends": [
+		"eslint:recommended",
+		"plugin:@typescript-eslint/strict-type-checked",
+		"plugin:@typescript-eslint/stylistic-type-checked",
+		"next/core-web-vitals",
+		"next/typescript",
+		"plugin:prettier/recommended"
+	],
+	"parser": "@typescript-eslint/parser",
+	"parserOptions": {
+		"project": true,
+		"tsconfigRootDir": "__dirname"
+	},
+	"plugins": ["@typescript-eslint", "prettier"],
+	"rules": {
+		"prettier/prettier": ["warn", { "endOfLine": "auto" }],
+		// "no-unused-vars": "warn",
+		"@typescript-eslint/no-unused-vars": "warn",
+		"prefer-const": "warn",
+		"no-var": "warn",
+		"no-alert": "error",
+		"@typescript-eslint/no-confusing-void-expression": [
+			"error",
+			{
+				"ignoreArrowShorthand": true
+			}
+		]
+	},
+	"overrides": [
+		{
+			"files": ["*.cjs", "*.js", "*.mjs"],
+			"extends": ["plugin:@typescript-eslint/disable-type-checked"]
+		}
+	],
+	"ignorePatterns": ["**/stylelint.*"]
+}

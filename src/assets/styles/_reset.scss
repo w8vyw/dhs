@@ -1,0 +1,82 @@
+img {
+	min-width: 0;
+	height: auto;
+	object-fit: cover;
+	object-position: center;
+}
+
+a,
+button {
+	cursor: pointer;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	border: none;
+	outline: none;
+
+	background: none;
+
+	color: inherit;
+	font: inherit;
+}
+
+html,
+body {
+	text-size-adjust: none;
+	text-rendering: optimizespeed;
+
+	min-height: 100dvh;
+	overflow-x: hidden;
+
+	color: black;
+	font-size: 18px;
+	font-weight: 400;
+	line-height: 1.2;
+}
+
+html:focus-within {
+	scroll-behavior: smooth;
+}
+
+a {
+	text-decoration: none;
+}
+
+ul,
+ol {
+	list-style: none;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+	display: block;
+	max-width: 100%;
+}
+
+@media (prefers-reduced-motion) {
+	html:focus-within {
+		scroll-behavior: auto;
+	}
+
+	*,
+	*::before,
+	*::after {
+		transition-duration: 0.01ms !important;
+
+		animation-duration: 0.01ms !important;
+		animation-iteration-count: 1 !important;
+
+		scroll-behavior: auto !important;
+	}
+}

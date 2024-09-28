@@ -1,0 +1,82 @@
+@import 'reset';
+@import 'variables';
+
+:root {
+	// colors
+	--white: white;
+	--black: #1b1b1b;
+	--brown: #83503a;
+	--pink-100: #fde7ec;
+	--pink-200: #ffdce5;
+	--gray-100: #a3a3a3;
+	--gray-200: #626262;
+
+	// z-indexes
+	--z-i-max: 6;
+	--z-i-high: 5;
+	--z-i-medium: 4;
+	--z-i-normal: 3;
+	--z-i-lite: 2;
+	--z-i-min: 1;
+
+	// spaces
+	--sp-xxl: clamp(80px, 13.3vw, 160px);
+	--sp-xl: clamp(40px, 6.6vw, 80px);
+	--sp-lg: clamp(30px, 5vw, 60px);
+	--sp-md: clamp(20px, 3.3vw, 40px);
+	--sp-sm: clamp(15px, 2.5vw, 30px);
+	--sp-xs: clamp(10px, 1.6vw, 20px);
+	--sp-xxs: clamp(5px, 0.83vw, 10px);
+
+	// font-sizes
+	// 	h
+	--fz-h1: clamp(36px, 6vw, 60px);
+	--fz-h2: clamp(28px, 4.6vw, 32px);
+	--fz-h3: clamp(26px, 4.4vw, 30px);
+	--fz-h4: clamp(24px, 4vw, 28px);
+	--fz-h5: clamp(22px, 3.5vw, 26px);
+	--fz-h6: clamp(20px, 3.4vw, 24px);
+
+	// 	p
+	--fz-p1: clamp(20px, 3.4vw, 22px);
+	--fz-p2: clamp(18px, 3vw, 20px);
+	--fz-p3: clamp(16px, 2.7vw, 18px);
+	--fz-p4: clamp(14px, 2.4vw, 16px);
+	--fz-p5: clamp(13px, 2.4vw, 15px);
+	--fz-p6: clamp(13px, 2.4vw, 14px);
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+
+	background: var(--pink-100);
+
+	color: var(--green-300);
+	font-size: var(--fz-p3);
+}
+
+main {
+	flex-grow: 1;
+	min-height: 2000px;
+}
+
+::-webkit-scrollbar {
+	width: 8px;
+
+	&-track {
+		background: var(--pink-200);
+	}
+
+	&-thumb {
+		border-radius: 4px;
+
+		background: var(--brown);
+	}
+}
+
+::selection {
+	background: var(--brown);
+
+	color: var(--white);
+}

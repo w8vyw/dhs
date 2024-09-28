@@ -1,0 +1,57 @@
+@import '@/styles/variables';
+
+.header {
+	position: relative;
+
+	margin-bottom: var(--sp-lg);
+
+	.topLine {
+		.container {
+			display: flex;
+			flex-wrap: wrap;
+
+			align-items: center;
+			gap: var(--sp-lg);
+			padding: var(--sp-xs);
+
+			@media (width <= $mobile-menu) {
+				gap: var(--sp-md);
+			}
+		}
+
+		.address {
+			@media (width <= $sm) {
+				display: none;
+			}
+		}
+
+		.schedule {
+			@media (width <= $lg) {
+				display: none;
+			}
+		}
+
+		.socialLinks {
+			@media (width <= $mobile-menu) {
+				display: none;
+			}
+		}
+
+		.tel {
+			margin-left: auto;
+
+			color: var(--brown);
+
+			font-size: var(--fz-p2);
+			font-weight: 500;
+
+			@media (width <= $mobile-menu) {
+				margin-right: var(--sp-md);
+			}
+
+			@media (width <= 340px) {
+				font-size: var(--fz-p3);
+			}
+		}
+	}
+}

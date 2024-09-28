@@ -1,0 +1,54 @@
+{
+	"name": "dhs",
+	"version": "1.0.0",
+	"scripts": {
+		"d": "next dev --turbo",
+		"b": "next build",
+		"dev": "next dev",
+		"build": "next build",
+		"start": "next start",
+		"lint": "next lint && stylelint \"**/*.scss\"",
+		"lint:fix": "next lint --fix && stylelint \"**/*.scss\" --fix",
+		"lint:eslint": "next lint",
+		"lint:eslint:fix": "next lint --fix",
+		"lint:stylelint": "stylelint \"**/*.scss\"",
+		"lint:stylelint:fix": "stylelint \"**/*.scss\" --fix"
+	},
+	"dependencies": {
+		"@vercel/speed-insights": "^1.0.12",
+		"clsx": "^2.1.1",
+		"framer-motion": "^11.5.6",
+		"init": "^0.1.2",
+		"next": "14.2.13",
+		"nodemailer": "^6.9.15",
+		"react": "^18.3.1",
+		"react-dom": "^18.3.1",
+		"react-hook-form": "^7.53.0",
+		"sharp": "^0.33.5"
+
+	},
+	"devDependencies": {
+		"@trivago/prettier-plugin-sort-imports": "^4.3.0",
+		"@types/node": "^22.6.1",
+		"@types/nodemailer": "^6.4.16",
+		"@types/react": "^18.3.8",
+		"@types/react-dom": "^18.3.0",
+		"@typescript-eslint/eslint-plugin": "^8.7.0",
+		"@typescript-eslint/parser": "^8.7.0",
+		"eslint": "^8.57.1",
+		"eslint-config-next": "14.2.13",
+		"eslint-config-prettier": "^9.1.0",
+		"eslint-plugin-prettier": "^5.2.1",
+		"prettier": "^3.3.3",
+		"sass": "^1.79.3",
+		"stylelint": "^16.9.0",
+		"stylelint-config-standard-scss": "^13.1.0",
+		"stylelint-declaration-block-no-ignored-properties": "^2.8.0",
+		"stylelint-order": "^6.0.4",
+		"stylelint-prettier": "^5.0.2",
+		"typescript": "^5.6.2"
+	},
+	"browserslist": [
+		"defaults"
+	]
+}

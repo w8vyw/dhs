@@ -1,0 +1,53 @@
+@import '@/styles/variables';
+@import '@/styles/mixins';
+
+.team {
+	padding: var(--sp-xl) 0;
+
+	.heading {
+		margin-bottom: var(--sp-md);
+
+		text-align: center;
+	}
+
+	.content {
+		.list {
+			display: grid;
+			grid-template-columns: repeat(4, 1fr);
+			justify-content: center;
+			gap: var(--sp-sm);
+
+			@media (width <= $lg) {
+				grid-template-columns: repeat(2, 1fr);
+				max-width: 80%;
+				margin: 0 auto;
+			}
+
+			@media (width <= $lg) {
+				grid-template-columns: 1fr;
+				max-width: 90%;
+			}
+		}
+
+		.member {
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+
+			.name {
+				@include brown-text-gradient;
+			}
+
+			.role {
+				color: var(--gray-200);
+			}
+
+			.imageContainer {
+				position: relative;
+
+				width: 100%;
+				aspect-ratio: 1;
+			}
+		}
+	}
+}

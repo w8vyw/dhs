@@ -1,0 +1,9 @@
+@import '@/styles/mixins';
+
+.heading {
+	font-family: var(--font-secondary);
+	font-size: var(--fz-h1);
+	text-transform: uppercase;
+
+	@include brown-text-gradient;
+}

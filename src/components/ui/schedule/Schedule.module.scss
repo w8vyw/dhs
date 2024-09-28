@@ -1,0 +1,12 @@
+.schedule {
+	font-size: var(--fz-p5);
+	font-weight: 600;
+	white-space: nowrap;
+
+	span {
+		display: block;
+
+		color: var(--gray-100);
+		font-weight: 400;
+	}
+}

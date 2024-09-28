@@ -1,0 +1,16 @@
+.socialLinks {
+	.list {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		align-items: center;
+		gap: var(--sp-xs);
+	}
+
+	.icon {
+		width: 25px;
+		aspect-ratio: 1;
+
+		fill: var(--gray-100);
+	}
+}

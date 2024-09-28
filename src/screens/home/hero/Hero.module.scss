@@ -1,0 +1,127 @@
+@import '@/styles/variables';
+
+.hero {
+	.container {
+		position: relative;
+
+		display: flex;
+		justify-content: flex-end;
+
+		@media screen and (width <= $xl) {
+			position: inherit;
+
+			flex-direction: column;
+			align-items: center;
+		}
+	}
+
+	.heading {
+		position: absolute;
+
+		top: 150px;
+		left: 30px;
+
+		font-family: var(--font-secondary);
+
+		@media (width <= $xl) {
+			position: inherit;
+
+			transform: translateY(5px);
+		}
+
+		.part1 {
+			display: block;
+
+			font-size: 60px;
+			text-transform: uppercase;
+
+			@media screen and (width <= 440px) {
+				text-align: center;
+			}
+
+			@media screen and (max-width: $md) {
+				font-size: 36px;
+			}
+		}
+
+		.part2 {
+			display: block;
+			margin-left: 185px;
+
+			font-size: 40px;
+
+			transform: translateY(-25px);
+
+			@media screen and (width <= 439.98px) {
+				margin-left: 150px;
+
+				transform: translateY(-8px);
+			}
+
+			@media screen and (width <= 420px) {
+				margin-left: 130px;
+			}
+
+			@media screen and (width <= 380px) {
+				margin-left: 115px;
+			}
+
+			@media screen and (width <= 350px) {
+				margin-left: 100px;
+			}
+
+			@media screen and (width <= 330px) {
+				margin-left: 90px;
+			}
+
+			@media screen and (max-width: $md) {
+				margin-left: 112px;
+
+				font-size: 20px;
+
+				transform: translateY(-12px);
+			}
+		}
+
+		.part3 {
+			display: block;
+			margin-left: 95px;
+
+			color: var(--brown);
+			font-family: var(--font-decor);
+			font-size: 140px;
+
+			transform: translateY(-80px);
+
+			@media screen and (width <= 439.98px) {
+				margin-left: 15px;
+
+				text-align: center;
+
+				transform: translateY(-30px);
+			}
+
+			@media screen and (max-width: $md) {
+				margin-left: 58px;
+
+				font-size: 70px;
+
+				transform: translateY(-41px);
+			}
+		}
+	}
+
+	.image {
+		width: 600px;
+
+		@media screen and (width <= $xl) {
+			width: 90%;
+			max-height: 400px;
+		}
+
+		@media screen and (width <= $md) {
+			width: 100%;
+			max-height: 330px;
+		}
+	}
+}

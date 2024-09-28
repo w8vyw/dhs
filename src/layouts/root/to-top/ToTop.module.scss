@@ -1,0 +1,36 @@
+.toTop {
+	position: fixed;
+	right: 40px;
+	bottom: 40px;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 44px;
+	height: 44px;
+	border-radius: 50%;
+	opacity: 0;
+	visibility: hidden;
+	box-shadow: 0 5px 10px rgb(0 0 0 / 10%);
+
+	background: var(--white);
+
+	transition: 200ms ease;
+
+	scale: 0.7;
+
+	&.active {
+		opacity: 1;
+		visibility: visible;
+
+		scale: 1;
+	}
+
+	.icon {
+		width: 24px;
+		height: 15px;
+		margin-bottom: 2px;
+
+		fill: var(--green-300);
+	}
+}

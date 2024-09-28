@@ -1,0 +1,36 @@
+@import '@/styles/variables';
+
+.about {
+	padding: var(--sp-xl) 0;
+
+	.heading {
+		margin-bottom: var(--sp-xxs);
+	}
+
+	.content {
+		display: flex;
+		align-items: flex-start;
+		gap: var(--sp-lg);
+
+		line-height: 1.6;
+
+		@media (width <= $lg) {
+			flex-direction: column;
+			align-items: center;
+		}
+
+		.text {
+			display: flex;
+			flex-direction: column;
+			gap: var(--sp-xs);
+		}
+
+		.image {
+			max-width: 50%;
+
+			@media (width <= $lg) {
+				max-width: 100%;
+			}
+		}
+	}
+}

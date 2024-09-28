@@ -1,0 +1,19 @@
+.overlay {
+	position: fixed;
+	inset: 0;
+	z-index: var(--z-i-medium);
+
+	width: 100%;
+	height: 100%;
+	opacity: 0;
+	visibility: hidden;
+
+	background: black;
+
+	transition: 200ms ease-out;
+
+	&.active {
+		opacity: 0.5;
+		visibility: visible;
+	}
+}
