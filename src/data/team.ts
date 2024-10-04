@@ -1,40 +1,17 @@
 export const team = [
 	{
-		name: 'Djanet',
-		role: 'Djanet',
+		name: 'Джанет',
+		role: '',
 		image: '/images/team/1.jpg'
 	},
 	{
-		name: 'Djanet',
-		role: 'Djanet'
-	},
-	{
-		name: 'Djanet',
-		role: 'Djanet',
+		name: 'Зинаида',
+		role: 'Администратор',
 		image: '/images/team/1.jpg'
 	},
 	{
-		name: 'Djanet',
-		role: 'Djanet',
-		image: '/images/team/1.jpg'
-	},
-	{
-		name: 'Djanet',
-		role: 'Djanet',
-		image: '/images/team/1.jpg'
-	},
-	{
-		name: 'Djanet',
-		role: 'Djanet'
-	},
-	{
-		name: 'Djanet',
-		role: 'Djanet',
-		image: '/images/team/1.jpg'
-	},
-	{
-		name: 'Djanet',
-		role: 'Djanet',
+		name: 'Ксения',
+		role: 'Парикмахер-стилист',
 		image: '/images/team/1.jpg'
 	}
 ]

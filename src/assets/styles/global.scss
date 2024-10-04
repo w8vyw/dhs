@@ -8,6 +8,7 @@
 	--brown: #83503a;
 	--pink-100: #fde7ec;
 	--pink-200: #ffdce5;
+	--gray-50: #dbdbdb;
 	--gray-100: #a3a3a3;
 	--gray-200: #626262;
 
@@ -49,6 +50,7 @@
 body {
 	display: flex;
 	flex-direction: column;
+	padding-bottom: var(--sp-xxl);
 
 	background: var(--pink-100);
 
@@ -76,7 +78,14 @@ main {
 }
 
 ::selection {
+	-webkit-text-fill-color: var(--white);
+	text-fill-color: var(--white);
+
 	background: var(--brown);
 
 	color: var(--white);
+}
+
+[class*='copyrights-pane'] {
+	display: none;
 }

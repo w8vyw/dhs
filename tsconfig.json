@@ -1,5 +1,6 @@
 {
 	"compilerOptions": {
+		"target": "es2017",
 		"lib": ["dom", "dom.iterable", "esnext"],
 		"allowJs": true,
 		"skipLibCheck": true,
@@ -17,6 +18,7 @@
 				"name": "next"
 			}
 		],
+		"typeRoots": ["./node_modules/@types", "./node_modules/@yandex/ymaps3-types"],
 		"baseUrl": "src",
 		"paths": {
 			"@/styles/*": ["assets/styles/*"],
@@ -25,7 +27,8 @@
 			"@/ui/*": ["components/ui/*"],
 			"@/shared/*": ["components/shared/*"],
 			"@/components/*": ["components/*"],
-			"@/*": ["*"]
+			"@/*": ["*"],
+			"ymaps3": ["../node_modules/@yandex/ymaps3-types"]
 		}
 	},
 	"include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],

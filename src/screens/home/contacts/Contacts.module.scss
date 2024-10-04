@@ -1,0 +1,30 @@
+.contacts {
+	padding: var(--sp-xl) 0;
+
+	.container {
+	}
+
+	.heading {
+		margin-bottom: var(--sp-lg);
+
+		text-align: center;
+	}
+
+	.content {
+		display: flex;
+		justify-content: space-between;
+
+		.text {
+		}
+
+		.map {
+			width: 50%;
+			min-height: 500px;
+
+			.ymap {
+				width: 100%;
+				height: 100%;
+			}
+		}
+	}
+}

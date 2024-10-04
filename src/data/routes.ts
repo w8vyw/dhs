@@ -10,8 +10,8 @@ export const routes: IRoute[] = [
 		label: 'О нас'
 	},
 	{
-		url: '/#service',
-		label: 'Наши услуги'
+		url: '/#services',
+		label: 'Прайс'
 	},
 	{
 		url: '/#contacts',

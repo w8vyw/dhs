@@ -1,0 +1,55 @@
+@import '@/styles/variables';
+@import '@/styles/mixins';
+
+.servicesSection {
+	padding: var(--sp-xl) 0;
+
+	.heading {
+		margin-bottom: var(--sp-xxs);
+
+		text-align: center;
+	}
+
+	.subHeading {
+		margin-bottom: var(--sp-lg);
+
+		font-size: var(--fz-p1);
+		text-align: center;
+	}
+
+	.tabs {
+		display: flex;
+		flex-direction: column;
+		gap: var(--sp-xs);
+		margin-bottom: var(--sp-xs);
+		padding: var(--sp-md);
+		border-radius: 40px;
+
+		background: var(--white);
+
+		font-size: var(--fz-p2);
+
+		.list {
+			display: flex;
+			gap: var(--sp-sm);
+			min-height: 34px;
+
+			@media (width <= $lg) {
+				flex-wrap: wrap;
+				justify-content: center;
+			}
+		}
+
+		.tab {
+			height: 100%;
+			padding: 5px 10px;
+			border-radius: 20px;
+
+			transition: 200ms ease;
+
+			&.active {
+				background: var(--pink-100);
+			}
+		}
+	}
+}

@@ -1,12 +1,12 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-	// poweredByHeader: false,
+	poweredByHeader: false,
 	images: {
 		formats: ['image/avif', 'image/webp']
+	},
+	experimental: {
+		optimizePackageImports: ['']
 	}
-	// experimental: {
-	// 	optimizePackageImports: ['']
-	// }
 }
 
 export default nextConfig

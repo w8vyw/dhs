@@ -17,7 +17,7 @@ export function Address({ className, ...props }: IAddressProps) {
 			{...props}
 		>
 			<NextLink
-				href='https://yandex.ru/maps/-/CCUgzXHEhC'
+				href='https://yandex.ru/maps/-/CDTsA8zP'
 				target='_blank'
 			></NextLink>
 			Московская Область, г. Реутов, ул. Октября, вл.10, ТЦ Экватор, 2 этаж
