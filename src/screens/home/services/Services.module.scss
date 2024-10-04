@@ -5,7 +5,7 @@
 	padding: var(--sp-xl) 0;
 
 	.heading {
-		margin-bottom: var(--sp-xxs);
+		margin-bottom: var(--sp-sm);
 
 		text-align: center;
 	}
@@ -20,9 +20,9 @@
 	.tabs {
 		display: flex;
 		flex-direction: column;
-		gap: var(--sp-xs);
+		gap: var(--sp-xxs);
 		margin-bottom: var(--sp-xs);
-		padding: var(--sp-md);
+		padding: var(--sp-xs);
 		border-radius: 40px;
 
 		background: var(--white);

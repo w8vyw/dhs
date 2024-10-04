@@ -18,12 +18,23 @@
 	.content {
 		.list {
 			display: grid;
-			grid-template-columns: repeat(3, 300px);
+			grid-template-columns: repeat(3, 1fr);
 			justify-content: center;
 			align-items: center;
-			gap: 100px;
+			gap: var(--sp-xl);
+
+			@media (width <= $lg) {
+				grid-template-columns: repeat(2, 1fr);
+			}
+
+			@media (width <= $sm) {
+				grid-template-columns: 1fr;
+			}
 
 			.item {
+				display: flex;
+				justify-content: center;
+
 				.image {
 				}
 			}

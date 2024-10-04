@@ -1,15 +1,26 @@
 .reviews {
-	margin: 0 auto;
+	padding: var(--sp-xl) 0;
 
 	.container {
-		height: 1100px;
+	}
+
+	.heading {
+		margin-bottom: var(--sp-md);
+
+		text-align: center;
 	}
 
 	.iframe {
 		width: 100%;
-		max-width: 700px;
 		height: 100%;
 		border: 1px solid #e6e6e6;
 		border-radius: 8px;
+	}
+
+	.rev {
+		width: 100%;
+		max-width: 700px;
+		height: 900px;
+		margin: 0 auto;
 	}
 }

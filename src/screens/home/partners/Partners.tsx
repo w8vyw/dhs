@@ -13,7 +13,6 @@ import Dalton from '@/images/partners/dalton.png'
 import Eldan from '@/images/partners/eldan.png'
 import Epica from '@/images/partners/epica.png'
 import Klio from '@/images/partners/klio.png'
-import Ladyhenna from '@/images/partners/ladyhenna.png'
 import Lebel from '@/images/partners/lebel.png'
 import Nook from '@/images/partners/nook.png'
 
@@ -32,7 +31,7 @@ export function Partners({ className, ...props }: IPartnersProps) {
 			{...props}
 		>
 			<Container className={styles.container}>
-				<Heading className={styles.heading}>Наша команда</Heading>
+				<Heading className={styles.heading}>Наши партнеры</Heading>
 				<div className={styles.content}>
 					<ul className={styles.list}>
 						<li className={styles.item}>
@@ -92,19 +91,10 @@ export function Partners({ className, ...props }: IPartnersProps) {
 								placeholder='blur'
 							/>
 						</li>
-
 						<li className={styles.item}>
 							<NextImage
 								className={styles.image}
 								src={Arganmidas}
-								alt=''
-								placeholder='blur'
-							/>
-						</li>
-						<li className={styles.item}>
-							<NextImage
-								className={styles.image}
-								src={Ladyhenna}
 								alt=''
 								placeholder='blur'
 							/>

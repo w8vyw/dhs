@@ -41,7 +41,6 @@ export function Services({ className, ...props }: IServicesProps) {
 		>
 			<Container className={styles.container}>
 				<Heading className={styles.heading}>Прайс</Heading>
-				<p className={styles.subHeading}>Вы будете точно знать стоимость вашей услуги</p>
 				<div className={styles.tabs}>
 					<ul className={styles.list}>
 						{tabs.map((t, index) => (
