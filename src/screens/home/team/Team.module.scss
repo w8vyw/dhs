@@ -15,7 +15,7 @@
 			display: grid;
 			grid-template-columns: repeat(4, 1fr);
 			justify-content: center;
-			gap: var(--sp-sm);
+			gap: var(--sp-xs);
 
 			@media (width <= $lg) {
 				grid-template-columns: repeat(2, 1fr);
@@ -32,21 +32,23 @@
 		.member {
 			display: flex;
 			flex-direction: column;
-			justify-content: space-between;
-
-			.name {
-				@include brown-text-gradient;
-			}
-
-			.role {
-				color: var(--gray-200);
-			}
 
 			.imageContainer {
 				position: relative;
 
 				width: 100%;
 				aspect-ratio: 1;
+				margin-bottom: var(--sp-xxs);
+			}
+
+			.text {
+				.name {
+					@include brown-text-gradient;
+				}
+
+				.role {
+					color: var(--gray-200);
+				}
 			}
 		}
 	}

@@ -70,16 +70,25 @@
 						}
 
 						> .extra {
-							margin-left: var(--sp-xxs);
+							margin: 0 var(--sp-xxs);
 
 							color: var(--gray-100);
-							font-size: var(--fz-p5);
+							font-size: var(--fz-p4);
+							text-align: center;
 						}
 
 						.value {
 							margin-left: auto;
 
 							font-weight: 800;
+							text-wrap: nowrap;
+
+							@media (width <= $sm) {
+								min-width: 70px;
+
+								text-align: right;
+								text-wrap: wrap;
+							}
 						}
 					}
 				}

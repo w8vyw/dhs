@@ -41,7 +41,7 @@ export function Team({ className, ...props }: ITeamProps) {
 										/>
 									</div>
 								) : (
-									'без изображения'
+									'-'
 								)}
 								<div className={styles.text}>
 									<p className={styles.name}>{member.name}</p>
