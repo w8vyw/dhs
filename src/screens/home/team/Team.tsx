@@ -38,8 +38,9 @@ export function Team({ className, ...props }: ITeamProps) {
 										<NextImage
 											className={styles.image}
 											src={member.image}
-											alt=''
+											alt={member.name}
 											fill
+											sizes=''
 										/>
 									) : (
 										<div className={styles.zaglyshka}></div>
