@@ -1,3 +1,5 @@
+@import '@/styles/variables';
+
 .contacts {
 	padding: var(--sp-xl) 0;
 
@@ -10,16 +12,39 @@
 	.content {
 		display: flex;
 		justify-content: space-between;
+		gap: var(--sp-md);
+
+		@media (width <= $md) {
+			flex-direction: column;
+		}
 
 		.text {
 			display: flex;
 			flex-direction: column;
 			gap: var(--sp-xs);
+
+			.addresss {
+			}
+
+			.schedule {
+			}
+
+			.link {
+				color: var(--brown);
+				font-weight: 900;
+			}
+
+			.social {
+			}
 		}
 
 		.map {
 			width: 50%;
-			min-height: 500px;
+			height: 500px;
+
+			@media (width <= $md) {
+				width: 100%;
+			}
 
 			.ym {
 				width: 100%;

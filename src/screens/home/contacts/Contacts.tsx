@@ -31,8 +31,13 @@ export function Contacts({ className, ...props }: IContactsProps) {
 					<div className={styles.text}>
 						<Address className={styles.address} />
 						<Schedule className={styles.schedule} />
-						<NextLink href='tel:+7 963 602 10 01'>+7 963 602 10 01</NextLink>
-						<SocialLinks />
+						<NextLink
+							className={styles.link}
+							href='tel:+7 963 602 10 01'
+						>
+							+7 963 602 10 01
+						</NextLink>
+						<SocialLinks className={styles.social} />
 					</div>
 					<div className={styles.map}>
 						<iframe

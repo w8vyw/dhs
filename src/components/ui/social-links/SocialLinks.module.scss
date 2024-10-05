@@ -2,8 +2,6 @@
 	.list {
 		display: flex;
 		flex-wrap: wrap;
-		justify-content: center;
-		align-items: center;
 		gap: var(--sp-xs);
 	}
 
@@ -12,5 +10,13 @@
 		aspect-ratio: 1;
 
 		fill: var(--gray-100);
+
+		transition: 200ms ease;
+
+		&:hover {
+			fill: var(--brown);
+
+			scale: 1.2;
+		}
 	}
 }
