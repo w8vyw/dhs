@@ -2,41 +2,36 @@ export const team = [
 	{
 		name: 'Зинаида Варлахина',
 		role: 'Администратор',
-		image: '/images/team/1.jpg'
+		image: '/images/team/zinaida.jpg'
 	},
 	{
 		name: 'Джанет Яшина',
 		role: 'Ведущий колорист',
-		image: '/images/team/1.jpg'
+		image: '/images/team/djanet.jpg'
 	},
 	{
 		name: 'Ксения Смирнова',
 		role: 'Парикмахер-стилист',
-		image: '/images/team/1.jpg'
+		image: '/images/team/ksenia.jpg'
 	},
 	{
 		name: 'Терещенко Виктория',
-		role: 'Парикмахер',
-		image: '/images/team/1.jpg'
+		role: 'Парикмахер'
 	},
 	{
 		name: 'Татьяна Лукашина',
-		role: 'Мастер ногтевого сервиса',
-		image: '/images/team/1.jpg'
+		role: 'Мастер ногтевого сервиса'
 	},
 	{
 		name: 'Людмила Аверьянова',
-		role: 'Мастер ногтевого сервиса',
-		image: '/images/team/1.jpg'
+		role: 'Мастер ногтевого сервиса'
 	},
 	{
 		name: 'Наталья Егорова',
-		role: 'Массажист-косметолог',
-		image: '/images/team/1.jpg'
+		role: 'Массажист-косметолог'
 	},
 	{
 		name: 'Мария Воловик',
-		role: 'Мастер перманентного макияжа',
-		image: '/images/team/1.jpg'
+		role: 'Мастер перманентного макияжа'
 	}
 ]

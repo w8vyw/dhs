@@ -11,6 +11,8 @@ import { team } from '@/data/team'
 import { Container } from '@/ui/container/Container'
 import { Heading } from '@/ui/heading/Heading'
 
+import { Icon } from '../../../components/ui/icon/Icon'
+
 interface ITeamProps extends ComponentPropsWithoutRef<'section'> {
 	prop?: string
 }
@@ -31,18 +33,18 @@ export function Team({ className, ...props }: ITeamProps) {
 								key={index}
 								className={styles.member}
 							>
-								{member.image ? (
-									<div className={styles.imageContainer}>
+								<div className={styles.imageContainer}>
+									{member.image ? (
 										<NextImage
 											className={styles.image}
 											src={member.image}
 											alt=''
 											fill
 										/>
-									</div>
-								) : (
-									'-'
-								)}
+									) : (
+										<div className={styles.zaglyshka}></div>
+									)}
+								</div>
 								<div className={styles.text}>
 									<p className={styles.name}>{member.name}</p>
 									<p className={styles.role}>{member.role}</p>

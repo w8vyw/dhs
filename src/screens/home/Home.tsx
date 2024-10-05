@@ -17,7 +17,7 @@ export function HomeScreen() {
 			<Services />
 			<Partners />
 			<Reviews />
-			<Contacts />
+			{/* <Contacts /> */}
 		</>
 	)
 }
