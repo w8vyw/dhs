@@ -47,16 +47,18 @@ export function RootLayout({
 			className='__poweredBy__w8vy.dev__Next.js__'
 		>
 			<body className={cn(inter.className, chekhovskoy.variable, smoothStone.variable)}>
-				<Script
-					id='yandex-maps'
-					strategy='afterInteractive'
-					src='https://api-maps.yandex.ru/v3/?apikey=cbb5d9b4-e809-4837-9fd5-b4f94b284f13&lang=ru_RU'
-				/>
 				<Providers>
 					<Header />
 					<main>{children}</main>
 					<ToTop />
 				</Providers>
+				<Suspense fallback={<></>}>
+					<Script
+						id='yclients'
+						strategy='afterInteractive'
+						src='https://w744048.yclients.com/widgetJS'
+					/>
+				</Suspense>
 				<Suspense fallback={<></>}>
 					<YandexMetrika counterId='94350995' />
 				</Suspense>
