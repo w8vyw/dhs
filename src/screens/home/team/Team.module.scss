@@ -39,6 +39,8 @@
 				width: 100%;
 				height: 400px;
 				margin-bottom: var(--sp-xxs);
+				border-radius: 20px;
+				overflow: hidden;
 			}
 
 			.zaglyshka {
@@ -47,7 +49,7 @@
 				width: 100%;
 				height: 100%;
 
-				background: var(--white);
+				background: var(--gray-50);
 
 				&::after {
 					content: 'Нет фото';

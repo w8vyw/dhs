@@ -24,7 +24,8 @@ export const team = [
 	},
 	{
 		name: 'Людмила Аверьянова',
-		role: 'Мастер ногтевого сервиса'
+		role: 'Мастер ногтевого сервиса',
+		image: '/images/team/averyanova.jpg'
 	},
 	{
 		name: 'Наталья Егорова',
