@@ -11,8 +11,6 @@ import { team } from '@/data/team'
 import { Container } from '@/ui/container/Container'
 import { Heading } from '@/ui/heading/Heading'
 
-import { Icon } from '../../../components/ui/icon/Icon'
-
 interface ITeamProps extends ComponentPropsWithoutRef<'section'> {
 	prop?: string
 }

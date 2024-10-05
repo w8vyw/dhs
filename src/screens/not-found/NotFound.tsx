@@ -4,7 +4,6 @@ import { useRouter } from 'next/navigation'
 
 import styles from './NotFound.module.scss'
 
-import { Button } from '@/ui/button/Button'
 import { Container } from '@/ui/container/Container'
 import { Heading } from '@/ui/heading/Heading'
 
@@ -14,15 +13,16 @@ export function NotFoundScreen() {
 	return (
 		<div className={styles.notFound}>
 			<Container>
-				<Heading className={styles.heading}>Ошибка 404 | Ничего не найдено</Heading>
-				<Button
-					className={styles.button}
+				<Heading className={styles.heading}>Ошибка 404 - Ничего не найдено</Heading>
+				<button
+					type='button'
 					onClick={() => {
 						router.back()
 					}}
+					className={styles.button}
 				>
 					вернуться назад
-				</Button>
+				</button>
 			</Container>
 		</div>
 	)

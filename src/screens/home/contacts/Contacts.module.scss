@@ -1,9 +1,6 @@
 .contacts {
 	padding: var(--sp-xl) 0;
 
-	.container {
-	}
-
 	.heading {
 		margin-bottom: var(--sp-lg);
 
@@ -15,13 +12,16 @@
 		justify-content: space-between;
 
 		.text {
+			display: flex;
+			flex-direction: column;
+			gap: var(--sp-xs);
 		}
 
 		.map {
 			width: 50%;
 			min-height: 500px;
 
-			.ymap {
+			.ym {
 				width: 100%;
 				height: 100%;
 			}

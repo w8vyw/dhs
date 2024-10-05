@@ -19,8 +19,6 @@ interface IContactsProps extends ComponentPropsWithoutRef<'section'> {
 }
 
 export function Contacts({ className, ...props }: IContactsProps) {
-	const LOCATION = { center: [55.751829, 37.859561], zoom: 16 }
-
 	return (
 		<section
 			id='contacts'
@@ -34,13 +32,12 @@ export function Contacts({ className, ...props }: IContactsProps) {
 						<Address className={styles.address} />
 						<Schedule className={styles.schedule} />
 						<NextLink href='tel:+7 963 602 10 01'>+7 963 602 10 01</NextLink>
-						<p>Следите за нами в социальных сетях</p>
 						<SocialLinks />
 					</div>
 					<div className={styles.map}>
 						<iframe
+							className={styles.ym}
 							src='https://yandex.ru/map-widget/v1/org/djanet_hair/55639407018/?indoorLevel=1&ll=37.854298%2C55.751391&utm_source=share&z=16.8'
-							className={styles.ymap}
 						/>
 					</div>
 				</div>

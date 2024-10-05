@@ -1,9 +1,14 @@
 .notFound {
 	.heading {
-		margin-bottom: 40px;
+		margin-bottom: var(--sp-md);
 	}
 
 	.button {
+		padding: 10px 20px 12px;
 		border-radius: 20px;
+
+		background: var(--brown);
+
+		color: var(--white);
 	}
 }
