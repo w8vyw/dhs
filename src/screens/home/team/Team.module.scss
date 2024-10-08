@@ -41,6 +41,10 @@
 				margin-bottom: var(--sp-xxs);
 				border-radius: 20px;
 				overflow: hidden;
+
+				.image {
+					object-position: top;
+				}
 			}
 
 			.zaglyshka {

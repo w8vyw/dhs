@@ -123,14 +123,14 @@ export const priceLists: IPriceList[] = [
 							{ label: 'Подравнивание', value: '700' },
 							{ label: 'Короткие', value: '2000' },
 							{ label: 'Средние', value: '2500' },
-							{ label: 'Длинные', value: '2800' }
+							{ label: 'Длинные', value: '3000' }
 						]
 					},
 					{
-						title: 'Топ / стилист',
+						title: 'Топ-стилист',
 						prices: [
-							{ label: 'Средние', value: '2500' },
-							{ label: 'Длинные', value: '2800' }
+							{ label: 'Средние', value: '3000' },
+							{ label: 'Длинные', value: '4000' }
 						]
 					}
 				]
@@ -180,18 +180,18 @@ export const priceLists: IPriceList[] = [
 					{
 						title: 'Укладка волос феном',
 						prices: [
-							{ label: 'Короткие', value: '700' },
-							{ label: 'Средние', value: '1000' },
-							{ label: 'Полудлинные', value: '1300' },
-							{ label: 'Длинные', value: '1600' }
+							{ label: 'Короткие', value: '1000' },
+							{ label: 'Средние', value: '1500' },
+							{ label: 'Полудлинные', value: '1500' },
+							{ label: 'Длинные', value: '2000' }
 						]
 					},
 					{
 						title: 'Локоны',
 						prices: [
-							{ label: 'Локоны средние', value: '1300' },
-							{ label: 'Локоны полудлинные', value: '1600' },
-							{ label: 'Локоны длинные', value: '2000' }
+							{ label: 'Локоны средние', value: '2500' },
+							{ label: 'Локоны полудлинные', value: '2500' },
+							{ label: 'Локоны длинные', value: '3000' }
 						]
 					}
 				]

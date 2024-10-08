@@ -39,6 +39,7 @@ export function Team({ className, ...props }: ITeamProps) {
 											alt={member.name}
 											fill
 											sizes=''
+											quality={100}
 										/>
 									) : (
 										<div className={styles.zaglyshka}></div>
